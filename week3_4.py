@@ -22,4 +22,5 @@ ans.to_csv('GDPTop.csv', mode='w', header=True, index=False)
 # 绘制GDP>10000亿的GDP柱状图（如下图），并保存为JPG图像
 plt.rcParams['font.sans-serif'] = ['Kaiti']
 ans.plot(kind='bar', title='Top GDP', linewidth=2, color='g', grid=True, alpha=0.9, use_index=True)
+plt.annotate('top GDP',xy=(3,29863),xytext=(4,30000) ,arrowprops=dict(arrowstyle='->'))
 plt.savefig('TopGDP.jpg')
